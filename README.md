@@ -7,6 +7,7 @@
 ## Question 1 (Headings and Screenshots)
 
 ### (a) 
+![Initial Commit](images/initial.png)
 
 ### (b) 
 
@@ -15,9 +16,9 @@
 ### (a) 
 
 ### (b)
-
+![Git Log](images/gitLog.png)
 ### (c)
-
+![After push](images/updated.png)
 ## Question 3
 
 ### (a) 
@@ -42,7 +43,10 @@
 ## Question 5
 
 ### (a) 
-```
+
+## Java Code Snippet
+
+```java
 for (x=10; x>0>; x++){
     System.out.println(x+"Seconds left until I am done with Question 5 part a!");
     TimeUnit.SECONDS.sleep(1);
