@@ -7,7 +7,7 @@
 ## Question 1 (Headings and Screenshots)
 
 ### (a) 
-![Initial Commit](images/initial.png)
+![Initial Commit](images/initial.PNG)
 
 ### (b) 
 
@@ -16,9 +16,9 @@
 ### (a) 
 
 ### (b)
-![Git Log](images/gitLog.png)
+![Git Log](images/gitLog.PNG)
 ### (c)
-![After push](images/updated.png)
+![After push](images/updated.PNG)
 ## Question 3
 
 ### (a) 
