@@ -18,7 +18,7 @@
 ### (b)
 ![Git Log](images/gitLog.PNG)
 ### (c)
-![After push](images/updated.PNG)
+![After push](images/new.PNG)
 ## Question 3
 
 ### (a) 
