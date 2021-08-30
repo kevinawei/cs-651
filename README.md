@@ -131,5 +131,5 @@ Using Ubuntu Bold 700
 
 ### (c)
 
-![Hover Links](images/hover.PNG)
+![Hover Links](images/hover.png)
 
