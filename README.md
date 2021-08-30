@@ -10,13 +10,17 @@
 
 
 ### (b) 
-
+- index.html
+- login.html
+- tournaments.html
 ## Question 2
 
 ### (a) 
+We should put the header outside the main .
 
 ### (b)
-
+Similarly to the header, we should include the footer outside of main. It should be the last element in the body if we want it to 
+show up as the last element on the page. This ensures that nothing will ever appear below it and that we can segment the page by header -> main -> footer
 ### (c)
 ![Homepage + Navbar/Footer](images/homepage.PNG)
 
@@ -126,7 +130,7 @@
 Using Ubuntu Bold 700
 
 ### (b)
-
+![CSS Selectors](images/css.PNG)
 ![Styled homepage](images/index.PNG)
 
 ### (c)
