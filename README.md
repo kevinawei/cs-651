@@ -137,3 +137,64 @@ Using Ubuntu Bold 700
 
 ![Hover Links](images/hover.png)
 
+```css
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+nav{
+    background-color: palevioletred;
+    max-width: 30%;
+    max-height: 86px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: gainsboro;
+
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+   text-decoration: none;
+}
+
+nav ul a:visited{
+    color: black;
+}
+
+nav ul a:hover{
+    background-color: red;
+    text-decoration: underline;
+}
+
+body{
+ background-color: black;
+}
+
+main{
+    background-color: palevioletred;
+    border-style: solid;
+    border-width: 10px;
+    border-color: gainsboro;
+    margin-top: 10px;
+
+}
+main p{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+main h2{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+footer{
+    text-align:center;
+    font-size: 20px;
+    color: white;
+    background-color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style:italic;
+}
