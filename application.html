@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">>
+        <title>Application</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="club.css">
+    </head>
+    <body>
+    <div id="cover"></div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="tournaments.html">Tournaments</a></li> 
+                    <li><a href="application.html">Apply Here!</a></li>   
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Apply Here!</h1>
+            <form id="application">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required minlength="4" maxlength="20" size="22">
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" pattern=".+[a-z]{2,4}" name="email" required minlength="10" maxlength="24" size="25">
+
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="password" required minlength="4" maxlength="18" size="20">
+
+                <label for="skill">Skill Level:</label>
+                    <select name="skill" id="skill">
+                        <option value="Beginner">Beginner(Never been to a tournament)</option>
+                        <option value="Novice">I've been to a tournament before</option>
+                        <option value="Intermediate">I've been to many tournaments</option>
+                        <option value="Expert">I'm a contender to win local tournaments</option>
+                        <option value="Master">I'm a Top 100 player</option>
+                        </select>
+                <label>Main Character(s)</label>
+                <textarea name="message" rows="2" cols="30">
+                    Put your main character here!
+                </textarea>
+                <button type="button" onclick="thanks()">Submit</button>
+            </form>
+       
+            <section id="dialog" class = "hide">
+                <h3>Thank you for your Application!</h3>
+                <p id="text"></p>
+                <button type="button" onclick ="closeMsg()">Close</button>
+            </section>
+        
+        </main>
+     <footer>© Kevin Wei 2021</footer>
+                <script>
+                    function thanks(){
+                        var cover = document.getElementById("cover");
+                        var below = document.getElementById("below");
+                        var form = document.getElementById("application");
+                        var text = document.getElementById("text");
+                        var thankYou = document.getElementById("dialog");
+        
+                        thankYou.classList.toggle("hide");
+                        thankYou.classList.add('show');
+                        
+                        console.log("check");
+                        
+                        var name = "Your name: " + application.elements['name'].value;
+                        var email = ", Email:" + application.elements['email'].value;
+                        var level = ", Skill: " + application.elements['skill'].value;
+        
+                        var result = name + email + level;
+        
+                        text.innerText = result;
+
+                        cover.classList.add('obscure');
+                    }
+                    function closeMsg(){
+                        console.log("check2");
+                        var thankYou = document.getElementById("dialog");
+                        var cover = document.getElementById("cover");
+                        thankYou.classList.toggle("hide");
+                        thankYou.classList.toggle("show");
+
+                        cover.classList.toggle('obscure');
+
+                    }
+                </script>
+    </body>
+</html>

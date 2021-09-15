@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>Tournament rules & Schedule</title>
         <link rel="stylesheet" href="club.css">
+        <script src="eventdata.js"></script>
+       
     </head>
     <body>
         <header>
@@ -11,41 +13,59 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="tournaments.html">Tournaments</a></li>   
+                    <li><a href="tournaments.html">Tournaments</a></li> 
+                    <li><a href="application.html">Apply Here!</a></li>   
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Tourament format and rules</h1>
+            <h1>Tournament format and rules</h1>
             <img src="images\genesis.jpg">
             <ul>
                 <li>Rule1</li>
                 <li>Rule2</li>
                 <li>Rule3</li>
             </ul>
-            <h1>Upcoming Tournament Schedule</h1>
+            <h1>Upcoming Tournament/Activity Schedule</h1>
            
-            <table>
+            <table id="myTable">
                 <tr>
                     <th>Name</th>
-                  <th>Date</th>
-                  <th>Location</th>
-                  <th>Link to register</th>
-                </tr>
-                <tr>
-                    <td>Riptide</td>
-                  <td>September 10-12th</td>
-                  <td>Sandusky, OH</td>
-                  <td>https://smash.gg/tournament/riptide-3/details</td>
-                </tr>
-                <tr>
-                    <td>Genesis 8</td>
-                  <td>January 28-30th</td>
-                  <td>San Jose, CA</td>
-                  <td>https://smash.gg/tournament/genesis-8/details</td>
-                </tr>
-              </table> 
+                    <th>Date</th>
+                    <th>Location</th>
+                </tr>  
+            </table> 
         </main>
+        
         <footer>© Kevin Wei 2021</footer>
+        <script>
+                let table = document.getElementById("myTable");
+                let row = table.insertRow(1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+
+                cell1.innerHTML = events[0].name;
+                cell2.innerHTML = events[0].date;
+                cell3.innerHTML = events[0].location;
+
+                let row2 = table.insertRow(2);
+                var cell4 = row2.insertCell(0);
+                var cell5 = row2.insertCell(1);
+                var cell6 = row2.insertCell(2);
+
+                cell4.innerHTML = events[1].name;
+                cell5.innerHTML = events[1].date;
+                cell6.innerHTML = events[1].location;
+
+                let row3 = table.insertRow(3);
+                var cell7 = row3.insertCell(0);
+                var cell8 = row3.insertCell(1);
+                var cell9 = row3.insertCell(2);
+
+                cell7.innerHTML = events[2].name;
+                cell8.innerHTML = events[2].date;
+                cell9.innerHTML = events[2].location;
+        </script>
     </body>
 </html>
