@@ -158,7 +158,6 @@ input:invalid{
 }
 #application{
     display:  inline-grid;
-    margin-left: 40%;
 }
 
 input{
